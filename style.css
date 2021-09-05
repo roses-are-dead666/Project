@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #FFB6E7;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 
 .headerInner {
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .navLink {
@@ -93,152 +93,118 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url("./images/intro.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("./images/intro.jpg") center no-repeat;
     background-size: cover;
 }
 
 .introInner {
-    width: 250px;
-    height: 250px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+   background-color: #FFB6E7;
+   border: 5px solid transparent;
+   border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+   border-image-slice: 1;
+   width: 500px;
+   padding: 10px 15px;
+   color: #fff;
+   box-shadow: 0 0 10px 5px;  
 }
 
-.introText {
-    font-size: 50px;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-}
+.animate {
+   font-size: 50px;
+   letter-spacing: 3px;
+   font-family: 'Lobster', cursive;
+ }
+ 
+ .animate span {
+   display: inline-block;
+ }
 
-.title {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-    .block {
-      width: 0%;
-      height: inherit;
-      background: #ffb510;
-      position: absolute;
-      animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-      display: flex;
-    }
+ .animate span:nth-of-type(2) {
+   animation-delay: .05s;
+ }
+ .animate span:nth-of-type(3) {
+   animation-delay: .1s;
+ }
+ .animate span:nth-of-type(4) {
+   animation-delay: .15s;
+ }
+ .animate span:nth-of-type(5) {
+   animation-delay: .2s;
+ }
+ .animate span:nth-of-type(6) {
+   animation-delay: .25s;
+ }
+ .animate span:nth-of-type(7) {
+   animation-delay: .3s;
+ }
+ .animate span:nth-of-type(8) {
+   animation-delay: .35s;
+ }
+ .animate span:nth-of-type(9) {
+   animation-delay: .4s;
+ }
+ .animate span:nth-of-type(10) {
+   animation-delay: .45s;
+ }
+ .animate span:nth-of-type(11) {
+   animation-delay: .5s;
+ }
+ .animate span:nth-of-type(12) {
+   animation-delay: .55s;
+ }
+ .animate span:nth-of-type(13) {
+   animation-delay: .6s;
+ }
+ .animate span:nth-of-type(14) {
+   animation-delay: .65s;
+ }
+ .animate span:nth-of-type(15) {
+   animation-delay: .7s;
+ }
+ .animate span:nth-of-type(16) {
+   animation-delay: .75s;
+ }
+ .animate span:nth-of-type(17) {
+   animation-delay: .8s;
+ }
+ .animate span:nth-of-type(18) {
+   animation-delay: .85s;
+ }
+ .animate span:nth-of-type(19) {
+   animation-delay: .9s;
+ }
+ .animate span:nth-of-type(20) {
+   animation-delay: .95s;
+ }
+ .animate span:nth-of-type(21) {
+   animation-delay: 1s;
+ }
 
-h1 {
-
-      color: #fff;
-      font-size: 32px;
-      -webkit-animation: mainFadeIn 2s forwards;
-      -o-animation: mainFadeIn 2s forwards;
-      animation: mainFadeIn 2s forwards;
-      animation-delay: 1.6s;
-      opacity: 0;
-      display: flex;
-      align-items: baseline;
-      position: relative;
-    }
-      span {
-        width:0px;
-        height: 0px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        background: #ffb510;
-        -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
-        animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
-        animation-delay: 2s;
-        margin-left: 5px;
-        margin-top: -10px;
-        position: absolute;
-        bottom: 13px;
-        right: -12px;
-
-      }
-
-      @keyframes mainBlock {
-        0% {
-           width: 0%;
-           left: 0;
-        }
-        50% {
-           width: 100%;
-           left: 0;
-        }
-        100% {
-           width: 0;
-           left: 100%;
-        }
-     }
-     
-     @keyframes secBlock {
-        0% {
-           width: 0%;
-           left: 0;
-        }
-        50% {
-           width: 100%;
-           left: 0;
-        }
-        100% {
-           width: 0;
-           left: 100%;
-        }
-     }
-     
-     @keyframes mainFadeIn {
-        0% {
-           opacity: 0;
-        }
-        100% {
-           opacity: 1;
-        }
-     }
-     
-     @keyframes popIn {
-        0% {
-           width: 0px;
-           height: 0px;
-           background: #e9d856;
-           border: 0px solid #ddd;
-           opacity: 0;
-        }
-        50% {
-           width: 10px;
-           height: 10px;
-           background: #e9d856;
-           opacity: 1;
-           bottom: 45px;
-        }
-        65% {
-           width: 7px;
-           height: 7px;
-           bottom: 0px;
-           width: 15px;
-        }
-        80% {
-           width: 10px;
-           height: 10px;
-           bottom: 20px;
-        }
-        100% {
-           width: 7px;
-           height: 7px;
-           background: #e9d856;
-           border: 0px solid #222;
-           bottom: 13px;
-        }
-     }
-     
-     @keyframes secFadeIn {
-        0% {
-           opacity: 0;
-        }
-        100% {
-           opacity: 0.5;
-        }
-     }
+ .three span {
+   color: #b10e81;
+   opacity: 0;
+   transform: translate(-300px, 0) scale(0);
+   animation: sideSlide .5s forwards;
+ }
+ 
+ @keyframes sideSlide {
+   60% {
+     transform: translate(20px, 0) scale(1);
+     color: #b10e81;
+   }
+ 
+   80% {
+     transform: translate(20px, 0) scale(1);
+     color: #b10e81;
+   }
+ 
+   99% {
+     transform: translate(0) scale(1.2);
+     color: #00f0ff;
+   }
+ 
+   100% {
+     transform: translate(0) scale(1);
+     opacity: 1;
+     color: #FFFF00;
+   }
+ }
