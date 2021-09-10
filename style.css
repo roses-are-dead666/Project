@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 220px;
 }
 
+
+
 /*
 .nav {
     font-size: 30px;
@@ -117,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
    width: 500px;
    padding: 10px 15px;
    color: #fff;
-   box-shadow: 0 0 10px 5px;  
+   box-shadow: 0 0 10px 5px;
+   margin: 0 auto;  
 }
 
 .animate {
